@@ -44,7 +44,7 @@ class halfElf {
         langs = { "Common", "Elven" };
         regions = { "" };
 
-        classes = { "Cleric", "Druid", "Fighter", "Ranger", "Mage", "Wizard", "Thief", "Bard" };
+        classes = { "Cleric", "Druid", "Fighter", "Ranger", "Mage", "Illusionist", "Thief", "Bard" };
         abilities = { "Infravision", "Resist Sleep", "Resist Charm", "Detect Door" };
         proficiencies = { "Grassy Plains", "Rolling Hills", "Tundra", "Desert", "Mountains" };
         

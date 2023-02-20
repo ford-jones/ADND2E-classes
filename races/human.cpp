@@ -42,7 +42,7 @@ class human {
         langs = { "Common" };
         regions = { "Grassy Plains", "Rolling Hills", "Tundra", "Desert", "Mountains" };
 
-        classes = { "Cleric", "Druid", "Fighter", "Ranger", "Mage", "Wizard", "Thief", "Bard", "Paladin" };
+        classes = { "Cleric", "Druid", "Fighter", "Ranger", "Mage", "Illusionist", "Thief", "Bard", "Paladin" };
         abilities = { "" };
         proficiencies = { "" };
         
