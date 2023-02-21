@@ -1,33 +1,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "half-elf.h"
 
 using std::string;
 using std::vector;
 
-class halfElf {
-    public:
-        double con;
-        double str;
-        double dex;
-        double intel;
-        double wis;
-        double cha;
-        double st_con;
-        double st_magic;
-        double st_poison;
-
-        int age;
-        int height;
-        vector<string> langs;
-        vector<string> regions;
-        
-        vector<string> classes;
-        vector<string> abilities;
-        vector<string> proficiencies;
-
-
-    halfElf() {
+    halfElf::halfElf() {
         con = 6;
         str = 3;
         dex = 6;
@@ -42,11 +21,11 @@ class halfElf {
         age = 20 < 160;
         height = 5;
         langs = { "Common", "Elven" };
-        regions = { "" };
+        regions = { "Grassy Plains", "Rolling Hills", "Tundra", "Desert", "Mountains" };
 
         classes = { "Cleric", "Druid", "Fighter", "Ranger", "Mage", "Illusionist", "Thief", "Bard" };
         abilities = { "Infravision", "Resist Sleep", "Resist Charm", "Detect Door" };
-        proficiencies = { "Grassy Plains", "Rolling Hills", "Tundra", "Desert", "Mountains" };
+        proficiencies = { "" };
         
         if(age >= 0) {
             str - 1;
@@ -68,12 +47,15 @@ class halfElf {
             intel + 2;
             wis + 3;
         };
-    }
-};
+    };
 
 int main() {
     halfElf halfElfObj;
     
-    std::cout << halfElfObj.con << "\n";
+    std::cout << "Half-elf Classes:" << "\n";
+    for(auto i: halfElfObj.classes) {
+        std::cout << i << "\n";
+    };
+    
     return 0;
 }
