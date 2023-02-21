@@ -1,33 +1,13 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "dwarf.h"
 
 using std::string;
 using std::vector;
 
-class dwarf {
-    public:
-        double con;
-        double str;
-        double dex;
-        double intel;
-        double wis;
-        double cha;
-        double st_con;
-        double st_magic;
-        double st_poison;
 
-        int age;
-        int height;
-        vector<string> langs;
-        vector<string> regions;
-        
-        vector<string> classes;
-        vector<string> abilities;
-        vector<string> proficiencies;
-
-
-    dwarf() {
+    dwarf::dwarf() {
         con = 11 + 1;
         str = 8;
         dex = 3;
@@ -68,12 +48,15 @@ class dwarf {
             intel + 2;
             wis + 3;
         };
-    }
-};
+    };
 
 int main() {
     dwarf dwarfObj;
     
-    std::cout << dwarfObj.con << "\n";
+    std::cout << "Dwarf Regions:" << "\n";
+    for(auto i: dwarfObj.regions) {
+        std::cout << i << "\n";
+    };
+
     return 0;
 }

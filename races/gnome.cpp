@@ -1,33 +1,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "gnome.h"
 
 using std::string;
 using std::vector;
 
-class gnome {
-    public:
-        double con;
-        double str;
-        double dex;
-        double intel;
-        double wis;
-        double cha;
-        double st_con;
-        double st_magic;
-        double st_poison;
-
-        int age;
-        int height;
-        vector<string> langs;
-        vector<string> regions;
-        
-        vector<string> classes;
-        vector<string> abilities;
-        vector<string> proficiencies;
-
-
-    gnome() {
+    gnome::gnome() {
         con = 8;
         str = 6;
         dex = 3;
@@ -68,12 +47,13 @@ class gnome {
             intel + 2;
             wis + 3;
         };
-    }
-};
+    };
 
 int main() {
     gnome gnomeObj;
     
+    std::cout << "Gnome Constitution Score:" << "\n";
     std::cout << gnomeObj.con << "\n";
+    
     return 0;
 }

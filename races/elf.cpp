@@ -1,33 +1,13 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "elf.h"
 
 using std::string;
 using std::vector;
 
-class elf {
-    public:
-        double con;
-        double str;
-        double dex;
-        double intel;
-        double wis;
-        double cha;
-        double st_con;
-        double st_magic;
-        double st_poison;
 
-        int age;
-        int height;
-        vector<string> langs;
-        vector<string> regions;
-        
-        vector<string> classes;
-        vector<string> abilities;
-        vector<string> proficiencies;
-
-
-    elf() {
+    elf::elf() {
         con = 7 - 1;
         str = 3;
         dex = 6 + 1;
@@ -68,12 +48,15 @@ class elf {
             intel + 2;
             wis + 3;
         };
-    }
-};
+    };
 
 int main() {
     elf elfObj;
-    
-    std::cout << elfObj.con << "\n";
+
+    std::cout << "Elf Abilities:" << "\n";
+    for(auto i: elfObj.abilities) {
+        std::cout << i << "\n";
+    };
+
     return 0;
 }

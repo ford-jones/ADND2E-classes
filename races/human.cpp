@@ -1,32 +1,12 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include "human.h"
 
 using std::string;
 using std::vector;
 
-class human {
-    public:
-        double con;
-        double str;
-        double dex;
-        double intel;
-        double wis;
-        double cha;
-        double st_con;
-        double st_magic;
-
-        int age;
-        int height;
-        vector<string> langs;
-        vector<string> regions;
-        
-        vector<string> classes;
-        vector<string> abilities;
-        vector<string> proficiencies;
-
-
-    human() {
+    human::human() {
         con = 8;
         str = 9;
         dex = 9;
@@ -42,7 +22,7 @@ class human {
         langs = { "Common" };
         regions = { "Grassy Plains", "Rolling Hills", "Tundra", "Desert", "Mountains" };
 
-        classes = { "Cleric", "Druid", "Fighter", "Ranger", "Mage", "Wizard", "Thief", "Bard" };
+        classes = { "Cleric", "Druid", "Fighter", "Ranger", "Mage", "Illusionist", "Thief", "Bard", "Paladin" };
         abilities = { "" };
         proficiencies = { "" };
         
@@ -66,12 +46,15 @@ class human {
             intel + 2;
             wis + 3;
         };
-    }
-};
+    };
 
 int main() {
     human humanObj;
     
-    std::cout << humanObj.con << "\n";
+    std::cout << "Human Classes:" << "\n";
+    for(auto i: humanObj.classes) {
+        std::cout << i << "\n";
+    };
+    
     return 0;
 }
