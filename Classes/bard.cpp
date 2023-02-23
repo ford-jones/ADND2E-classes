@@ -1,14 +1,17 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#include "bard.h"
 
 using std::string;
 using std::vector;
 
-class bard {
-    public:
-
-};
+bard::bard() {
+    abilities = {""};
+    proficiencies = {""};
+    base_mods = {""};
+    
+}
 
 int main() {
     bard bardObj;

@@ -2,9 +2,12 @@
 #include <string>
 #include <vector>
 #include "half-elf.h"
+#include "bard.h"
 
 using std::string;
 using std::vector;
+
+bard bardObj;
 
     halfElf::halfElf() {
         con = 6;
