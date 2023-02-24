@@ -8,7 +8,7 @@
 using std::string;
 using std::vector;
 
-int rng() {
+int d10() {
     srand(time((0)));
     int number = 1 + (rand() % 10);
     return number;
@@ -28,11 +28,14 @@ fighter::fighter() {
     level = 1;
 
     xp = 0;
-    hp = 0 + (level * rng());
+    hp = 0 + (level * d10());
 
     attacksPerRound = 1;
     numOfSpells = 0;
+
+
     magicSchools = {""};
+    spheres = {""};
     spells = {""};
 
     if(level > 6 && level < 13) {

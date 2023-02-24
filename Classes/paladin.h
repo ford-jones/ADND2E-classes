@@ -26,7 +26,9 @@ class paladin {
 
         double attacksPerRound;
         int numOfSpells;
+        
         vector<string> magicSchools;
+        vector<string> spheres;
         vector<string> spells;
 
     paladin();

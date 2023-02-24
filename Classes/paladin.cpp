@@ -8,7 +8,7 @@
 using std::string;
 using std::vector;
 
-int rng() {
+int d10() {
     srand(time((0)));
     int number = 1 + (rand() % 10);
     return number;
@@ -25,13 +25,15 @@ paladin::paladin() {
     abilities = {"Detect Evil", "Disease Immunity", "Lay On Hands", "Cure Disease", "Aura of Protection", "Turn Undead", "Circle of Power", "Call War Horse"};
 
     level = 1;
-    castingLevel = 1;
+    castingLevel = 0;
     xp = 0;
-    hp = 0 + (level * rng());
+    hp = 0 + (level * d10());
 
     attacksPerRound = 1;
     numOfSpells = 0;
+
     magicSchools = {"Priest Spells"};
+    spheres = {""};
     spells = {""};
 
     if(level > 6 && level < 13) {
