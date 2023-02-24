@@ -16,7 +16,7 @@ int d8() {
 
 
 cleric::cleric() {
-        weapons = {""};
+        weapons = { "Club", "Dagger", "Dart", "Flail", "Mace", "Morning Star", "Quaterstaff", "Sickle", "Sling", "Warhammer"};
         armor = {"Clothing", "Padded Armor", "Leather Armor", "Studded Leather Armor", "Hide Armor", "Scale Mail", "Brigandine Armor", "Chain Mail", "Banded Mail", "Bronze Plate Mail", "Plate Mail", "Field Plate Armor", "Full Plate Armor"};
 
         base_mods = {""};
@@ -38,7 +38,6 @@ cleric::cleric() {
         spells = {"Animal Friendship", "Bless", "Combine", "Command", "Create Water", "Cure Light Wounds", "Detect Evil", "Detect Trap", "Detect Magic", "Detect Poison", "Endure Heat/Cold", "Entangle", "Faerie Fire", "Invisibility to Animals", "Invisibility to Undead", "Light", "Locate Animals/Plants", "Magical Stone", "Pass Without Trace", "Protection from Evil", "Purify Food/Drink", "Dispell Fear", "Sanctuary", "Shillelagh"};
 };
 
-//  +2 st against fire / lightning magic (evocation)
 //  weapons are conditional depending on sphere / deity
 
 int main() {
