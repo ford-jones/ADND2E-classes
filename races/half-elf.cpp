@@ -27,20 +27,20 @@ using std::vector;
         abilities = { "Infravision", "Resist Sleep", "Resist Charm", "Detect Door" };
         proficiencies = { "" };
         
-        if(age >= 0) {
+        if(age >= 62) {
             str - 1;
             con -1;
             intel + 1;
             wis + 1;   
         } 
-        else if(age >= 0) {
+        else if(age >= 83) {
             str - 3;
             dex - 2;
             con - 2;
             intel + 1;
             wis + 2;
         }
-        else if(age >= 0) {
+        else if(age >= 125) {
             str - 4;
             dex - 2;
             con - 3;

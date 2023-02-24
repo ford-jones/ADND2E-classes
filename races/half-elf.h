@@ -30,7 +30,6 @@ class halfElf {
         vector<string> abilities;
         vector<string> proficiencies;
 
-
     halfElf();
 };
 
