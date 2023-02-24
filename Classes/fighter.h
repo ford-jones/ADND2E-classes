@@ -23,6 +23,7 @@ class fighter {
         double hp;
 
         double attacksPerRound;
+        vector<string> magic;
 
     fighter();
 };

@@ -26,9 +26,10 @@ fighter::fighter() {
 
     level = 1;
     xp = 0;
-    hp = level * rng();
+    hp = 0 + (level * rng());
 
     attacksPerRound = 1;
+    magic = {""};
 
     if(level > 6 && level < 13) {
         attacksPerRound = 1.5;
