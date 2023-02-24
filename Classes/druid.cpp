@@ -18,7 +18,7 @@ druid::druid() {
         weapons = {"Club", "Sickle", "Spear", "Dart", "Sabre", "Dagger", "Sling", "Quaterstaff"};
         armor = {"Clothing", "Padded Armor", "Leather Armor", "Studded Leather Armor", "Hide Armor"};
 
-        base_mods;
+        base_mods = {""};
         abilities = {"Druid Speak", "Beast speak", "Charm Immunity", "Shapeshift"};
 
         alignment = {"Lawful Neutral", "True Neutral", "Chaotic Neutral"};
