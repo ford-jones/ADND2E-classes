@@ -10,7 +10,6 @@ using std::vector;
 
 class ranger {
     public:
-
         vector<string> weapons;
         vector<string> armor;
 
@@ -21,10 +20,13 @@ class ranger {
         vector<string> enemies;
 
         int level;
+        int castingLevel;
         double xp;
         double hp;
 
         double attacksPerRound;
+        int numOfSpells;
+        vector<string> magicSchools;        
         vector<string> spells;
 
     ranger();

@@ -20,11 +20,14 @@ class fighter {
         vector<string> enemies;
 
         int level;
+        int castingLevel;
         double xp;
         double hp;
 
         double attacksPerRound;
-        vector<string> magic;
+        int numOfSpells;
+        vector<string> magicSchools;
+        vector<string> spells;
 
     fighter();
 };

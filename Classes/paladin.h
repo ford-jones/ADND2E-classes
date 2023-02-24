@@ -20,10 +20,13 @@ class paladin {
         vector<string> enemies;
 
         int level;
+        int castingLevel;
         double xp;
         double hp;
 
         double attacksPerRound;
+        int numOfSpells;
+        vector<string> magicSchools;
         vector<string> spells;
 
     paladin();
