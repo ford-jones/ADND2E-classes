@@ -17,6 +17,7 @@ class paladin {
         vector<string> abilities;
 
         vector<string> alignment;
+        vector<string> enemies;
 
         int level;
         double xp;
