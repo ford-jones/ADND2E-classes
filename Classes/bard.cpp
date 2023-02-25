@@ -25,7 +25,7 @@ bard::bard() {
         level = 1;
         castingLevel = 0;
         xp = 0;
-        hp = 0 + (level * d6());
+        hp = 6 + (level * d6());
 
         attacksPerRound = 1;
         numOfSpells = 0;

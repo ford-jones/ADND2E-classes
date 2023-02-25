@@ -28,7 +28,7 @@ ranger::ranger() {
         level = 1;
         castingLevel = 0;
         xp = 0;
-        hp = 0 + (level * d10());
+        hp = 10 + (level * d10());
 
         attacksPerRound = 1;
         numOfSpells = 0;

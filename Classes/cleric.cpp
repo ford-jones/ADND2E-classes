@@ -28,7 +28,7 @@ cleric::cleric() {
         level = 1;
         castingLevel = 0;
         xp = 0;
-        hp = 0 + (level * d8());
+        hp = 8 + (level * d8());
 
         attacksPerRound = 1;
         numOfSpells = 1;

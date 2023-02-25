@@ -26,7 +26,7 @@ mage::mage() {
     level = 1;
     castingLevel = 0;
     xp = 0;
-    hp = 0 + (level * d4());
+    hp = 4 + (level * d4());
 
     attacksPerRound = 1;
     numOfSpells = 1;
