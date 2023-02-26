@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "bard.h"
+#include "../hdr/bard.h"
 
 using std::string;
 using std::vector;
@@ -37,5 +37,11 @@ bard::bard() {
 
 int main() {
     bard bardObj;
+
+    std::cout << "Bard Allignments:" << "\n";
+    for(auto i: bardObj.alignment) {
+        std::cout << i << "\n";
+    };
+    
     return 0;
 };

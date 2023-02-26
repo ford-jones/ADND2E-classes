@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib> 
 #include <time.h>
-#include "fighter.h"
+#include "../hdr/fighter.h"
 
 using std::string;
 using std::vector;

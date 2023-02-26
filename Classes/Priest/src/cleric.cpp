@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib> 
 #include <time.h>
-#include "cleric.h"
+#include "../hdr/cleric.h"
 
 using std::string;
 using std::vector;

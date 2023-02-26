@@ -1,7 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <string>
-#include "mage.h"
+#include "../hdr/mage.h"
 
 using std::string;
 using std::vector;

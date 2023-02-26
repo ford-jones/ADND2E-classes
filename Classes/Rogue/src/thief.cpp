@@ -3,7 +3,7 @@
 #include <string>
 #include <time.h>
 #include <cstdlib>
-#include "thief.h"
+#include "../hdr/thief.h"
 
 using std::string;
 using std::vector;
@@ -42,5 +42,11 @@ thief::thief() {
 
 int main() {
     thief thiefObj;
+
+    std::cout << "Thief Abilities:" << "\n";
+    for(auto i: thiefObj.abilities) {
+        std::cout << i << "\n";
+    };
+    
     return 0;
 };

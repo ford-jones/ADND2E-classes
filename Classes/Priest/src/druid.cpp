@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib> 
 #include <time.h>
-#include "druid.h"
+#include "../hdr/druid.h"
 
 using std::string;
 using std::vector;
@@ -41,5 +41,11 @@ druid::druid() {
     //  druid speak** druids have a secret language they can speak to one another
 int main() {
     druid druidObj;
+
+    std::cout << "Druid spells (1st level):" << "\n";
+    for(auto i: druidObj.spells) {
+        std::cout << i << "\n";
+    };
+    
     return 0;
 };

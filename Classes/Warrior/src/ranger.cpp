@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib> 
 #include <time.h>
-#include "ranger.h"
+#include "../hdr/ranger.h"
 
 using std::string;
 using std::vector;
@@ -52,5 +52,10 @@ ranger::ranger() {
 
 int main() {
     ranger rangerObj;
+
+    std::cout << "Ranger Abilities:" << "\n";
+    for(auto i: rangerObj.abilities) {
+        std::cout << i << "\n";
+    }
     return 0;
 };
