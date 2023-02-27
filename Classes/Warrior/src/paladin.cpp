@@ -3,7 +3,7 @@
 #include <string>
 #include <cstdlib> 
 #include <time.h>
-#include "paladin.h"
+#include "../hdr/paladin.h"
 
 using std::string;
 using std::vector;
