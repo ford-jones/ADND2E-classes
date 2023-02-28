@@ -50,13 +50,13 @@ using std::vector;
         };
     };
 
-int main() {
-    dwarf dwarfObj;
+// int main() {
+//     dwarf dwarfObj;
     
-    std::cout << "Dwarf Regions:" << "\n";
-    for(auto i: dwarfObj.regions) {
-        std::cout << i << "\n";
-    };
+//     std::cout << "Dwarf Regions:" << "\n";
+//     for(auto i: dwarfObj.regions) {
+//         std::cout << i << "\n";
+//      };
 
-    return 0;
-}
+//     return 0;
+// }

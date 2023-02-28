@@ -49,11 +49,11 @@ using std::vector;
         };
     };
 
-int main() {
-    gnome gnomeObj;
+// int main() {
+//     gnome gnomeObj;
     
-    std::cout << "Gnome Constitution Score:" << "\n";
-    std::cout << gnomeObj.con << "\n";
+//     std::cout << "Gnome Constitution Score:" << "\n";
+//     std::cout << gnomeObj.con << "\n";
     
-    return 0;
-}
+//     return 0;
+// }
