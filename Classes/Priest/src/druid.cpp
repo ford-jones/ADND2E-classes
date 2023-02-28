@@ -8,7 +8,7 @@
 using std::string;
 using std::vector;
 
-int d8() {
+int d8D() {
     srand(time((0)));
     int number = 1 + (rand() % 8);
     return number;
@@ -27,7 +27,7 @@ druid::druid() {
         level = 1;
         castingLevel = 0;
         xp = 0;
-        hp = 8 + (level * d8());
+        hp = 8 + (level * d8D());
 
         attacksPerRound = 1;
         numOfSpells = 1;
@@ -39,13 +39,3 @@ druid::druid() {
 
     //  +2 st against fire / lightning magic (evocation)
     //  druid speak** druids have a secret language they can speak to one another
-int main() {
-    druid druidObj;
-
-    std::cout << "Druid spells (1st level):" << "\n";
-    for(auto i: druidObj.spells) {
-        std::cout << i << "\n";
-    };
-    
-    return 0;
-};

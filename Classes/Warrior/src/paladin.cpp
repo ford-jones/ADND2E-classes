@@ -8,7 +8,7 @@
 using std::string;
 using std::vector;
 
-int d10() {
+int d10P() {
     srand(time((0)));
     int number = 1 + (rand() % 10);
     return number;
@@ -27,7 +27,7 @@ paladin::paladin() {
     level = 1;
     castingLevel = 0;
     xp = 0;
-    hp = 10 + (level * d10());
+    hp = 10 + (level * d10P());
 
     attacksPerRound = 1;
     numOfSpells = 0;
@@ -49,15 +49,3 @@ paladin::paladin() {
 //  cannot retain wealth
 //  cannot have followers
 //  cannot have more than 10 magic items
-
-
-int main() {
-    paladin paladinObj;
-
-        std::cout << "Paladin Abilities:" << "\n";
-        for(auto i: paladinObj.abilities) {
-            std::cout << i << "\n";
-        };
-
-    return 0;
-};

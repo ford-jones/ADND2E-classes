@@ -8,7 +8,7 @@
 using std::string;
 using std::vector;
 
-int d8() {
+int d8C() {
     srand(time((0)));
     int number = 1 + (rand() % 8);
     return number;
@@ -28,7 +28,7 @@ cleric::cleric() {
         level = 1;
         castingLevel = 0;
         xp = 0;
-        hp = 8 + (level * d8());
+        hp = 8 + (level * d8C());
 
         attacksPerRound = 1;
         numOfSpells = 1;
@@ -39,14 +39,3 @@ cleric::cleric() {
 };
 
 //  weapons are conditional depending on sphere / deity
-
-int main() {
-    cleric clericObj;
-
-    std::cout << "Cleric Spheres:" << "\n";
-    for(auto i: clericObj.spheres) {
-        std::cout << i << "\n";
-    };
-
-    return 0;
-};

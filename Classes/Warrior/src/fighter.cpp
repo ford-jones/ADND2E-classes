@@ -8,7 +8,7 @@
 using std::string;
 using std::vector;
 
-int d10() {
+int d10F() {
     srand(time((0)));
     int number = 1 + (rand() % 10);
     return number;
@@ -28,7 +28,7 @@ fighter::fighter() {
     level = 1;
 
     xp = 0;
-    hp = 10 + (level * d10());
+    hp = 10 + (level * d10F());
 
     attacksPerRound = 1;
     numOfSpells = 0;
@@ -48,11 +48,3 @@ fighter::fighter() {
 };
     //  cannot use magic
     //  if a player has 16 or more strength they recieve xp * 0.1
-
-
-int main() {
-    fighter fighterObj;
-        std::cout << "Fighter Health:" << "\n";
-        std::cout << fighterObj.hp << "\n";
-    return 0;
-};

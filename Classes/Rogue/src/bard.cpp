@@ -6,7 +6,7 @@
 using std::string;
 using std::vector;
 
-int d6() {
+int d6B() {
     srand(time((0)));
     int number = 1 + (rand() % 6);
     return number;
@@ -25,7 +25,7 @@ bard::bard() {
         level = 1;
         castingLevel = 0;
         xp = 0;
-        hp = 6 + (level * d6());
+        hp = 6 + (level * d6B());
 
         attacksPerRound = 1;
         numOfSpells = 0;
@@ -34,14 +34,3 @@ bard::bard() {
         spheres = {""};
         spells = {""};
 }
-
-int main() {
-    bard bardObj;
-
-    std::cout << "Bard Allignments:" << "\n";
-    for(auto i: bardObj.alignment) {
-        std::cout << i << "\n";
-    };
-    
-    return 0;
-};

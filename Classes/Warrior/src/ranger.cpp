@@ -8,7 +8,7 @@
 using std::string;
 using std::vector;
 
-int d10() {
+int d10R() {
     srand(time((0)));
     int number = 1 + (rand() % 10);
     return number;
@@ -28,7 +28,7 @@ ranger::ranger() {
         level = 1;
         castingLevel = 0;
         xp = 0;
-        hp = 10 + (level * d10());
+        hp = 10 + (level * d10R());
 
         attacksPerRound = 1;
         numOfSpells = 0;
@@ -49,13 +49,3 @@ ranger::ranger() {
 //  player becomes a fighter if allignment is broken
 //  None of the rangers abilities are usable in armor heavier than studded leather (except for dual wield, which just becomes penalised cth like every other class)
 //  At 10th level the ranger attracts 2d6 followers, all of which are animals
-
-int main() {
-    ranger rangerObj;
-
-    std::cout << "Ranger Abilities:" << "\n";
-    for(auto i: rangerObj.abilities) {
-        std::cout << i << "\n";
-    }
-    return 0;
-};

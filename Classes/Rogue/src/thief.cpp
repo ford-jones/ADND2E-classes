@@ -8,7 +8,7 @@
 using std::string;
 using std::vector;
 
-int d6() {
+int d6T() {
     srand(time((0)));
     int number = 1 + (rand() % 6);
     return number;
@@ -27,7 +27,7 @@ thief::thief() {
         level = 1;
         castingLevel = 0;
         xp = 0;
-        hp = 6 + (level * d6());
+        hp = 6 + (level * d6T());
 
         attacksPerRound = 1;
         numOfSpells = 0;
@@ -38,15 +38,3 @@ thief::thief() {
 };
 
 //   A player with 16 dex recieves xp * 0.1
-
-
-int main() {
-    thief thiefObj;
-
-    std::cout << "Thief Abilities:" << "\n";
-    for(auto i: thiefObj.abilities) {
-        std::cout << i << "\n";
-    };
-    
-    return 0;
-};
