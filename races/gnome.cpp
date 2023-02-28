@@ -48,12 +48,3 @@ using std::vector;
             wis + 3;
         };
     };
-
-// int main() {
-//     gnome gnomeObj;
-    
-//     std::cout << "Gnome Constitution Score:" << "\n";
-//     std::cout << gnomeObj.con << "\n";
-    
-//     return 0;
-// }

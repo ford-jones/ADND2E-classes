@@ -49,14 +49,3 @@ using std::vector;
             wis + 3;
         };
     };
-
-// int main() {
-//     elf elfObj;
-
-//     std::cout << "Elf Abilities:" << "\n";
-//     for(auto i: elfObj.abilities) {
-//         std::cout << i << "\n";
-//     };
-
-//     return 0;
-// }

@@ -47,14 +47,3 @@ using std::vector;
             wis + 3;
         };
     };
-
-// int main() {
-//     human humanObj;
-    
-//     std::cout << "Human Classes:" << "\n";
-//     for(auto i: humanObj.classes) {
-//         std::cout << i << "\n";
-//     };
-    
-//     return 0;
-// }

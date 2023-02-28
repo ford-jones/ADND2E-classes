@@ -48,14 +48,3 @@ using std::vector;
             wis + 3;
         };
     };
-
-// int main() {
-//     halfElf halfElfObj;
-    
-//     std::cout << "Half-elf Classes:" << "\n";
-//     for(auto i: halfElfObj.classes) {
-//         std::cout << i << "\n";
-//     };
-    
-//     return 0;
-// }

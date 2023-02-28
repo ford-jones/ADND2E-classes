@@ -49,14 +49,3 @@ using std::vector;
             wis + 3;
         };
     };
-
-// int main() {
-//     dwarf dwarfObj;
-    
-//     std::cout << "Dwarf Regions:" << "\n";
-//     for(auto i: dwarfObj.regions) {
-//         std::cout << i << "\n";
-//      };
-
-//     return 0;
-// }
