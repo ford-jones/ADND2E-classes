@@ -50,13 +50,13 @@ using std::vector;
         };
     };
 
-int main() {
-    elf elfObj;
+// int main() {
+//     elf elfObj;
 
-    std::cout << "Elf Abilities:" << "\n";
-    for(auto i: elfObj.abilities) {
-        std::cout << i << "\n";
-    };
+//     std::cout << "Elf Abilities:" << "\n";
+//     for(auto i: elfObj.abilities) {
+//         std::cout << i << "\n";
+//     };
 
-    return 0;
-}
+//     return 0;
+// }

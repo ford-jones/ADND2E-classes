@@ -49,13 +49,13 @@ using std::vector;
         };
     };
 
-int main() {
-    halfElf halfElfObj;
+// int main() {
+//     halfElf halfElfObj;
     
-    std::cout << "Half-elf Classes:" << "\n";
-    for(auto i: halfElfObj.classes) {
-        std::cout << i << "\n";
-    };
+//     std::cout << "Half-elf Classes:" << "\n";
+//     for(auto i: halfElfObj.classes) {
+//         std::cout << i << "\n";
+//     };
     
-    return 0;
-}
+//     return 0;
+// }

@@ -49,11 +49,11 @@ using std::vector;
         };
     };
 
-int main() {
-    halfling halflingObj;
+// int main() {
+//     halfling halflingObj;
     
-    std::cout << "Halfling Saving Throw (poison):" << "\n";
-    std::cout << halflingObj.st_poison << "\n";
+//     std::cout << "Halfling Saving Throw (poison):" << "\n";
+//     std::cout << halflingObj.st_poison << "\n";
     
-    return 0;
-}
+//     return 0;
+// }
