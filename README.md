@@ -9,7 +9,7 @@ The project is being compiled with g++ compiler, if you are using another compil
 
 # Compile the project:
 ```
-g++ -o run races/*.cpp main.cpp
+g++ -o run races/*.cpp Classes/*/src/*.cpp main.cpp
 ```
 
 # Run the project:
